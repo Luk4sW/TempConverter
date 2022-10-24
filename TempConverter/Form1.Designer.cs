@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.Temperature_1 = new System.Windows.Forms.TextBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.Temperature_2 = new System.Windows.Forms.TextBox();
             this.C_to_F = new System.Windows.Forms.Button();
             this.F_to_C = new System.Windows.Forms.Button();
@@ -44,12 +42,6 @@
             this.Temperature_1.Name = "Temperature_1";
             this.Temperature_1.Size = new System.Drawing.Size(142, 22);
             this.Temperature_1.TabIndex = 0;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Temperature_2
             // 
@@ -119,7 +111,6 @@
         #endregion
 
         private System.Windows.Forms.TextBox Temperature_1;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox Temperature_2;
         private System.Windows.Forms.Button C_to_F;
         private System.Windows.Forms.Button F_to_C;
