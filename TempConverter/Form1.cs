@@ -30,5 +30,19 @@ namespace TempConverter
             int celsius = (fahrenheit - 32) * 5 / 9;
             Temperature_1.Text = celsius.ToString();
         }
+
+        private void C_to_K_Click(object sender, EventArgs e)
+        {
+            int celsius = Convert.ToInt32(Temperature_1.Text);
+            int kelvin = celsius + 273;
+            Temperature_2.Text = kelvin.ToString();
+        }
+
+        private void K_to_C_Click(object sender, EventArgs e)
+        {
+            int kelvin = Convert.ToInt32(Temperature_2.Text);
+            int celsius = kelvin - 273;
+            Temperature_1.Text = celsius.ToString();
+        }
     }
 }
