@@ -33,7 +33,9 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.Temperature_2 = new System.Windows.Forms.TextBox();
             this.C_to_F = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.F_to_C = new System.Windows.Forms.Button();
+            this.K_to_C = new System.Windows.Forms.Button();
+            this.C_to_K = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Temperature_1
@@ -66,22 +68,44 @@
             this.C_to_F.UseVisualStyleBackColor = true;
             this.C_to_F.Click += new System.EventHandler(this.C_to_F_Click);
             // 
-            // button1
+            // F_to_C
             // 
-            this.button1.Location = new System.Drawing.Point(174, 124);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 39);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "<- F to C";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.F_to_C.Location = new System.Drawing.Point(174, 107);
+            this.F_to_C.Name = "F_to_C";
+            this.F_to_C.Size = new System.Drawing.Size(113, 39);
+            this.F_to_C.TabIndex = 4;
+            this.F_to_C.Text = "<- F to C";
+            this.F_to_C.UseVisualStyleBackColor = true;
+            this.F_to_C.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // K_to_C
+            // 
+            this.K_to_C.Location = new System.Drawing.Point(174, 213);
+            this.K_to_C.Name = "K_to_C";
+            this.K_to_C.Size = new System.Drawing.Size(113, 39);
+            this.K_to_C.TabIndex = 5;
+            this.K_to_C.Text = "<- K to C";
+            this.K_to_C.UseVisualStyleBackColor = true;
+            this.K_to_C.Click += new System.EventHandler(this.K_to_C_Click);
+            // 
+            // C_to_K
+            // 
+            this.C_to_K.Location = new System.Drawing.Point(174, 168);
+            this.C_to_K.Name = "C_to_K";
+            this.C_to_K.Size = new System.Drawing.Size(113, 39);
+            this.C_to_K.TabIndex = 6;
+            this.C_to_K.Text = "C to K ->";
+            this.C_to_K.UseVisualStyleBackColor = true;
+            this.C_to_K.Click += new System.EventHandler(this.C_to_K_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.C_to_K);
+            this.Controls.Add(this.K_to_C);
+            this.Controls.Add(this.F_to_C);
             this.Controls.Add(this.C_to_F);
             this.Controls.Add(this.Temperature_2);
             this.Controls.Add(this.Temperature_1);
@@ -98,7 +122,9 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox Temperature_2;
         private System.Windows.Forms.Button C_to_F;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button F_to_C;
+        private System.Windows.Forms.Button K_to_C;
+        private System.Windows.Forms.Button C_to_K;
     }
 }
 
