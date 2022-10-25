@@ -17,32 +17,44 @@ namespace TempConverter
             InitializeComponent();
         }
 
+        public double ConvertCtoF(double c)
+        {
+            return (c * 9 / 5) + 32;
+        }
+        public double ConvertFtoC(double f)
+        {
+            return (f - 32) * 5 / 9;
+        }
+
+        public double ConvertCtoK(double c)
+        {
+            return c + 273.15;
+        }
+
+        public double
+            ConvertKtoC(double k)
+        {
+            return k - 273.15;
+        }
+
         private void C_to_F_Click(object sender, EventArgs e)
         {
-            int celsius = Convert.ToInt32(Temperature_1.Text);
-            int fahrenheit = (celsius * 9 / 5) + 32;
-            Temperature_2.Text = fahrenheit.ToString();
+            Temperature_2.Text = ConvertCtoF(Convert.ToDouble(Temperature_1.Text)).ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int fahrenheit = Convert.ToInt32(Temperature_2.Text);
-            int celsius = (fahrenheit - 32) * 5 / 9;
-            Temperature_1.Text = celsius.ToString();
+            Temperature_1.Text = ConvertFtoC(Convert.ToDouble(Temperature_2.Text)).ToString();
         }
 
         private void C_to_K_Click(object sender, EventArgs e)
         {
-            int celsius = Convert.ToInt32(Temperature_1.Text);
-            int kelvin = celsius + 273;
-            Temperature_2.Text = kelvin.ToString();
+            Temperature_2.Text = ConvertCtoK(Convert.ToDouble(Temperature_1.Text)).ToString();
         }
 
         private void K_to_C_Click(object sender, EventArgs e)
         {
-            int kelvin = Convert.ToInt32(Temperature_2.Text);
-            int celsius = kelvin - 273;
-            Temperature_1.Text = celsius.ToString();
+            Temperature_1.Text = ConvertKtoC(Convert.ToDouble(Temperature_2.Text)).ToString();
         }
     }
 }
