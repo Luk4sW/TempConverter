@@ -49,12 +49,21 @@ namespace TempConverter
 
         private void C_to_K_Click(object sender, EventArgs e)
         {
-            Temperature_2.Text = ConvertCtoK(Convert.ToDouble(Temperature_1.Text)).ToString();
+            Temperature_3.Text = ConvertCtoK(Convert.ToDouble(Temperature_1.Text)).ToString();
         }
 
         private void K_to_C_Click(object sender, EventArgs e)
         {
-            Temperature_1.Text = ConvertKtoC(Convert.ToDouble(Temperature_2.Text)).ToString();
+            Temperature_1.Text = ConvertKtoC(Convert.ToDouble(Temperature_3.Text)).ToString();
+        }
+
+        private void RGV_Click(object sender, EventArgs e)
+        {
+            Random rand = new Random();
+            int r = rand.Next(0, 255);
+            Temperature_1.Text = r.ToString();
+            Temperature_2.Text = ConvertCtoF(r).ToString();
+            Temperature_3.Text = ConvertCtoK(r).ToString();
         }
     }
 }

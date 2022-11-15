@@ -34,6 +34,8 @@
             this.F_to_C = new System.Windows.Forms.Button();
             this.K_to_C = new System.Windows.Forms.Button();
             this.C_to_K = new System.Windows.Forms.Button();
+            this.RGV = new System.Windows.Forms.Button();
+            this.Temperature_3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Temperature_1
@@ -45,7 +47,7 @@
             // 
             // Temperature_2
             // 
-            this.Temperature_2.Location = new System.Drawing.Point(287, 23);
+            this.Temperature_2.Location = new System.Drawing.Point(320, 24);
             this.Temperature_2.Name = "Temperature_2";
             this.Temperature_2.Size = new System.Drawing.Size(174, 22);
             this.Temperature_2.TabIndex = 2;
@@ -90,11 +92,30 @@
             this.C_to_K.UseVisualStyleBackColor = true;
             this.C_to_K.Click += new System.EventHandler(this.C_to_K_Click);
             // 
+            // RGV
+            // 
+            this.RGV.Location = new System.Drawing.Point(23, 62);
+            this.RGV.Name = "RGV";
+            this.RGV.Size = new System.Drawing.Size(113, 84);
+            this.RGV.TabIndex = 7;
+            this.RGV.Text = "Random generating Values";
+            this.RGV.UseVisualStyleBackColor = true;
+            this.RGV.Click += new System.EventHandler(this.RGV_Click);
+            // 
+            // Temperature_3
+            // 
+            this.Temperature_3.Location = new System.Drawing.Point(320, 153);
+            this.Temperature_3.Name = "Temperature_3";
+            this.Temperature_3.Size = new System.Drawing.Size(174, 22);
+            this.Temperature_3.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Temperature_3);
+            this.Controls.Add(this.RGV);
             this.Controls.Add(this.C_to_K);
             this.Controls.Add(this.K_to_C);
             this.Controls.Add(this.F_to_C);
@@ -116,6 +137,8 @@
         private System.Windows.Forms.Button F_to_C;
         private System.Windows.Forms.Button K_to_C;
         private System.Windows.Forms.Button C_to_K;
+        private System.Windows.Forms.Button RGV;
+        private System.Windows.Forms.TextBox Temperature_3;
     }
 }
 
